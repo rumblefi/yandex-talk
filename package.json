@@ -1,0 +1,32 @@
+{
+  "name": "yandex-talk",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://rumblefi.github.io/yandex-talk/",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.2",
+    "react-big-scheduler": "^0.2.5",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5",
+    "url-loader": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

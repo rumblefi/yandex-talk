@@ -1,0 +1,13 @@
+.app{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.app__top{
+	flex-shrink: 0;
+}
+
+.app__main{
+	flex-grow: 1;
+}
