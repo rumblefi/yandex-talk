@@ -1,10 +1,11 @@
 import React from 'react'
 import './Button.scss'
 import {Link} from "@reach/router"
+import {beautifyClassNames} from '../../helpers'
 
 const Button = ({type, text, link, className, disabled}) => {
 
-    const clazz = `button ${className}`
+    const clazz = beautifyClassNames(['button', className])
 
     if (type === 'submit') {
         return <button type="submit" className={clazz} disabled={disabled}>{text}</button>

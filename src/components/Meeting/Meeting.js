@@ -2,6 +2,7 @@ import React from 'react'
 import './Meeting.scss'
 import CircleButton from '../CircleButton/CircleButton'
 import CloseIcon from '../CloseIcon/CloseIcon'
+import Label from '../Label/Label'
 
 export default class Meeting extends React.Component{
 
@@ -11,10 +12,11 @@ export default class Meeting extends React.Component{
 				<div className="meeting__container">
 					<div className="meeting__top">
 						<div className="meeting__title">Новая встреча</div>
-						<CircleButton className="meeting__close" >
+						<CircleButton  >
 							<CloseIcon />
 						</CircleButton>
 					</div>
+					<Label></Label>
 				</div>
 			</div>
 		)
