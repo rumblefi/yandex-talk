@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "24577d08baaa51b38163da174948b26f",
-    "url": "/static/media/HelveticaNeueCyr-Roman.24577d08.woff2"
+    "revision": "c9703f00461cd358d9d7394f6b95c395",
+    "url": "/static/media/HelveticaNeueCyr-Roman.c9703f00.woff"
   },
   {
     "revision": "f581c9d6a14cb318cebe",
@@ -28,20 +28,20 @@ self.__precacheManifest = [
     "url": "/static/js/main.f581c9d6.chunk.js"
   },
   {
+    "revision": "24577d08baaa51b38163da174948b26f",
+    "url": "/static/media/HelveticaNeueCyr-Roman.24577d08.woff2"
+  },
+  {
     "revision": "713814ead540f7770e0fa7f45c19fe7c",
     "url": "/static/media/HelveticaNeueCyr-Medium.713814ea.woff2"
   },
   {
-    "revision": "c9703f00461cd358d9d7394f6b95c395",
-    "url": "/static/media/HelveticaNeueCyr-Roman.c9703f00.woff"
+    "revision": "aa08ca62d2ed0ed946f9106ce77cfad1",
+    "url": "/static/media/HelveticaNeueCyr-Bold.aa08ca62.woff2"
   },
   {
     "revision": "176ce3c24f825b034daa73ca15461018",
     "url": "/static/media/HelveticaNeueCyr-Medium.176ce3c2.woff"
-  },
-  {
-    "revision": "aa08ca62d2ed0ed946f9106ce77cfad1",
-    "url": "/static/media/HelveticaNeueCyr-Bold.aa08ca62.woff2"
   },
   {
     "revision": "f272876e66648fb13549",
