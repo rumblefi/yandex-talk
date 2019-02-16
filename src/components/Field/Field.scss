@@ -10,9 +10,20 @@
 	font-size: 13px;
 	letter-spacing: 0.47px;
 	color: #000;
+	transition: 0.3s border-color;
 
 	&::placeholder{
 		color: #858E98;
+		transition: 0.3s color;
+	}
+
+	&:focus{
+		border-color: #007DFF;
+
+		&::placeholder{
+			color: #000000;
+		}
+
 	}
 
 }
