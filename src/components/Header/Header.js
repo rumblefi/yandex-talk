@@ -10,7 +10,7 @@ const Header = () => (
             type="link"
             text='Создать встречу'
             link="/meeting"
-            modificator="button--1"/>
+            className="button--1"/>
     </header>
 )
 

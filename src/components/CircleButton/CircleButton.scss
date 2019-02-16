@@ -10,11 +10,26 @@
     border: none;
     cursor: pointer;
 
+    &:hover,
+    &:focus{
+
+        svg{
+
+            path{
+                fill: #000000;
+            }
+
+        }
+
+    }
+
     svg {
 
         path {
-            transition: 0.3s fill;
+            transition: 0.5s fill;
+            
         }
+
     }
 
 }

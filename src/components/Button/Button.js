@@ -2,9 +2,9 @@ import React from 'react'
 import './Button.scss'
 import {Link} from "@reach/router"
 
-const Button = ({type, text, link, modificator, disabled}) => {
+const Button = ({type, text, link, className, disabled}) => {
 
-    const clazz = `button ${modificator}`
+    const clazz = `button ${className}`
 
     if (type === 'submit') {
         return <button type="submit" className={clazz} disabled={disabled}>{text}</button>
