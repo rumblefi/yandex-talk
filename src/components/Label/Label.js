@@ -2,16 +2,11 @@ import React from 'react'
 import './Label.scss'
 import {beautifyClassNames} from '../../helpers'
 
-const Label = ({chilren, className}) => {
-
-    return (
-        <label
-            className={ beautifyClassNames(['label', className]) }>
-            <span className="label__title">Тема</span>
-            {chilren}
-        </label>
-    )
-
-}
+const Label = ({className,title,children}) => (
+	<div className={beautifyClassNames(['label', className])} >
+		<div className="label__title">{title}</div>
+		{children}
+	</div>
+)
 
 export default Label

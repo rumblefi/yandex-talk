@@ -20,4 +20,16 @@
         font-family: "HelveticaNeueCyr-Bold";
     }
 
+    &-body{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 55px; 
+
+        &__partial{
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
 }
