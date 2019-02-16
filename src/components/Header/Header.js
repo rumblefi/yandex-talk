@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
-import './Header.css'
+import './Header.scss'
 import Button from '../Button/Button'
 
 const Header = () => (

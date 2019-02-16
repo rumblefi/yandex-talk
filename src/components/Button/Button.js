@@ -1,5 +1,5 @@
 import React from 'react'
-import './Button.css'
+import './Button.scss'
 import {Link} from "@reach/router"
 
 const Button = ({type, text, link, modificator, disabled}) => {

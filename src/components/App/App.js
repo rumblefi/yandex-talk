@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
-import '../../index.css'
-import './App.css'
+import '../../index.scss'
+import './App.scss'
 import {Router} from "@reach/router";
 import SchedulerComponent from '../SchedulerComponent/SchedulerComponent'
 import Meeting from '../Meeting/Meeting'

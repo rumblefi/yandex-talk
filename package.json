@@ -2,13 +2,15 @@
   "name": "yandex-talk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rumblefi.github.io/yandex-talk/",
+  "homepage": "https://rumblefi.github.io/",
   "dependencies": {
     "@reach/router": "^1.2.1",
     "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
     "react": "^16.8.2",
     "react-big-scheduler": "^0.2.5",
     "react-dom": "^16.8.2",
+    "react-inlinesvg": "^0.8.4",
     "react-scripts": "2.1.5",
     "url-loader": "^1.1.2"
   },

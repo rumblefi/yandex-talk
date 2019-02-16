@@ -1,5 +1,7 @@
 import React from 'react'
-import './Meeting.css'
+import './Meeting.scss'
+import CircleButton from '../CircleButton/CircleButton'
+import CloseIcon from '../CloseIcon/CloseIcon'
 
 export default class Meeting extends React.Component{
 
@@ -9,8 +11,9 @@ export default class Meeting extends React.Component{
 				<div className="meeting__container">
 					<div className="meeting__top">
 						<div className="meeting__title">Новая встреча</div>
-						<div className="meeting__close">
-						</div>
+						<CircleButton className="meeting__close" >
+							<CloseIcon />
+						</CircleButton>
 					</div>
 				</div>
 			</div>
