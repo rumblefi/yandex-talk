@@ -12,14 +12,14 @@ const data = [
 		floor:'4 этаж'
 	},
 	{
-		id: '1',
+		id: '2',
 		startTime:'16:00',
 		endTime:'16:30',
 		name:'Поле непаханное',
 		floor:'4 этаж'
 	},
 	{
-		id: '1',
+		id: '3',
 		startTime:'16:00',
 		endTime:'16:30',
 		name:'Тёмная башня',
