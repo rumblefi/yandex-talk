@@ -1,20 +1,13 @@
 import React from 'react';
 import SelectComponent from 'react-select';
+import Option from '../Option/Option'
 
 const options = [
     {
         value: 'Лекс Лютер',
-        label: 'Лекс Лютер'
-    }, {
-        value: 'Томас Андересон',
-        label: 'Томас Андересон'
-    }, {
-        value: 'Дарт Вейдер',
-        label: 'Дарт Вейдер'
-    }, {
-        value: 'Кларк Кент',
-        label: 'Кларк Кент'
-    }
+        label: 'Лекс Лютер',
+        img: 'https://cdn.pornpics.com/pics/2015-11-01/200026_02big.jpg' 
+    },
 ];
 
 const customStyles = {
@@ -33,10 +26,18 @@ const customStyles = {
             borderColor: '#007DFF'
         }
     }),
-    menu: (base,state) => ({
+    menu: (base, state) => ({
         ...base,
-        backgroundColor: 'red',
         margin: '0',
+        boxShadow: '0 1px 10px 0 rgba(0,44,92,0.28)'
+    }),
+    menuList: (base, state) => ({
+        ...base,
+        padding: 0
+    }),
+    multiValueRemove: (base, state) => ({
+        ...base,
+        backgroundColor: 'red'
     })
 }
 
@@ -59,9 +60,11 @@ export default class Select extends React.Component {
             noOptionsMessage={() => "Не найдено"}
             components={{
                 DropdownIndicator: () => null,
-                IndicatorSeparator: () => null
+                IndicatorSeparator: () => null,
+                Option
             }}
-            defaultMenuIsOpen={true}
+            defaultMenuIsOpen
+            isMulti
         />);
     }
 }
