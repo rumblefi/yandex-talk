@@ -30,12 +30,13 @@ const customStyles = {
             ? '#007DFF'
             : '#E9ECEF',
         '&:hover': {
-            borderColor: '#E9ECEF'
+            borderColor: '#007DFF'
         }
     }),
-    dropdownIndicator: (base, state) => ({
+    menu: (base,state) => ({
         ...base,
-        dispay: 'none'
+        backgroundColor: 'red',
+        margin: '0',
     })
 }
 
@@ -55,9 +56,12 @@ export default class Select extends React.Component {
             onChange={this.handleChange}
             options={options}
             styles={customStyles}
+            noOptionsMessage={() => "Не найдено"}
             components={{
-            DropdownIndicator: () => null,
-            IndicatorSeparator: () => null
-        }}/>);
+                DropdownIndicator: () => null,
+                IndicatorSeparator: () => null
+            }}
+            defaultMenuIsOpen={true}
+        />);
     }
 }
