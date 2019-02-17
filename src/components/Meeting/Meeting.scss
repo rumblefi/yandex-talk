@@ -1,5 +1,12 @@
 .meeting {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     padding-top: 32px;
+
+    &__content{
+        flex-grow: 1;
+    }
 
     &__container {
         width: 100%;
@@ -13,6 +20,7 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
+        flex-shrink: 0;
     }
 
     &__title {
@@ -24,10 +32,30 @@
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 32px;
+        flex-shrink: 0;
 
         &__partial{
             display: flex;
             align-items: center;
+        }
+
+    }
+
+    &__bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        flex-shrink: 0;
+        border-top: 2px solid #E9ECEF;
+    }
+
+    &__button{
+        margin-right: 16px;
+
+        &:last-child{
+            margin-right: 0;
         }
 
     }

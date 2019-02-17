@@ -9,13 +9,14 @@ import StartLabel from '../StartLabel/StartLabel'
 import EndLabel from '../EndLabel/EndLabel'
 import RecommendNegotiationsLabel from '../RecommendNegotiationsLabel/RecommendNegotiationsLabel'
 import SelectLabel from '../SelectLabel/SelectLabel';
+import Button from '../Button/Button'
 
 export default class Meeting extends React.Component {
 
     render() {
         return (
-            <div className="page meeting">
-                <div className="meeting__container">
+            <div className="meeting">
+                <div className="meeting__content meeting__container">
                     <div className="meeting__top">
                         <div className="meeting__title">Новая встреча</div>
                         <Link to="/">
@@ -39,6 +40,10 @@ export default class Meeting extends React.Component {
                             className="recommend-negotiations-label"
                             title="Рекомендованные переговорки"/>
                     </div>
+                </div>
+                <div className="meeting__bottom meeting__buttons">
+                    <Button text='Отмена' className="button--2 meeting__button"/>
+                    <Button text='Создать встречу' className="button--1 meeting__button"/>
                 </div>
             </div>
         )
