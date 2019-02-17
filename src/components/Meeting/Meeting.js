@@ -37,8 +37,7 @@ export default class Meeting extends React.Component {
                         <SelectLabel className="select-label" title="Участники"/>
                         <RecommendNegotiationsLabel
                             className="recommend-negotiations-label"
-                            title="Рекомендованные переговорки"
-                            negotiationClassname="meeting-negotiation--recommend"/>
+                            title="Рекомендованные переговорки"/>
                     </div>
                 </div>
             </div>

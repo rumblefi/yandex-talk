@@ -1,14 +1,27 @@
 .meeting-negotiation{
+
+	$this: &;
+
 	display: flex;
 	align-items: center;
 	height: 37px;
 	padding-left: 10px;
-	padding-right: 10px;
+	padding-right: 16px;
 	font-size: 13px;
 	border-radius: 4px;
 
 	&--recommend{
 		background-color: #E9ECEF;
+
+		#{$this}__close{
+			display: none;
+		}
+
+	}
+
+	&--success{
+		background-color: #007DFF;
+		color: #fff;
 	}
 
 	&__time{
@@ -26,6 +39,25 @@
 	&__divider{
 		margin-left: 2px;
 		margin-right: 2px;
+	}
+
+	&__close{
+		margin-left: auto;
+		flex-shrink: 0;
+		cursor: pointer;
+		width: 12px;
+		height: 12px;
+
+		svg{
+			width: 12px;
+			height: 12px;
+
+			path{
+				fill: #fff;
+			}
+
+		}
+
 	}
 
 }
