@@ -3,7 +3,7 @@ import './NotFound.scss'
 import Button from '../Button/Button'
 
 const NotFound = () => (
-    <div className="not-found">
+    <div className="page not-found">
         <span className="not-found__title" >Такой страницы не существует</span>
         <Button
             type="link"

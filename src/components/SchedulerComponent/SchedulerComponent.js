@@ -5,11 +5,12 @@ import Scheduler, {SchedulerData, ViewTypes, DATE_FORMAT, DemoData} from 'react-
 import withDragDropContext from '../withDnDContext/withDnDContext'
 import 'react-big-scheduler/lib/css/style.css'
 
-class SchedulerComponent extends Component{
-    constructor(props){
+class SchedulerComponent extends Component {
+    constructor(props) {
         super(props);
 
-        //let schedulerData = new SchedulerData(new moment("2017-12-18").format(DATE_FORMAT), ViewTypes.Week);
+        // let schedulerData = new SchedulerData(new
+        // moment("2017-12-18").format(DATE_FORMAT), ViewTypes.Week);
         let schedulerData = new SchedulerData(new Date(), ViewTypes.Day, false, false, {
             // minuteStep: 15
         });
@@ -21,57 +22,51 @@ class SchedulerComponent extends Component{
         }
     }
 
-    render(){
+    render() {
         const {viewModel} = this.state;
         return (
-            <Scheduler schedulerData={viewModel}
-                        prevClick={this.prevClick}
-                        nextClick={this.nextClick}
-                        onSelectDate={this.onSelectDate}
-                        onViewChange={this.onViewChange}
-                        eventItemClick={this.eventClicked}
-                        viewEventClick={this.ops1}
-                        viewEventText="Ops 1"
-                        viewEvent2Text="Ops 2"
-                        viewEvent2Click={this.ops2}
-                        updateEventStart={this.updateEventStart}
-                        updateEventEnd={this.updateEventEnd}
-                        moveEvent={this.moveEvent}
-                        newEvent={this.newEvent}
-            />
+            <div className="page" >
+                <Scheduler
+                    schedulerData={viewModel}
+                    prevClick={this.prevClick}
+                    nextClick={this.nextClick}
+                    onSelectDate={this.onSelectDate}
+                    onViewChange={this.onViewChange}
+                    eventItemClick={this.eventClicked}
+                    viewEventClick={this.ops1}
+                    viewEventText="Ops 1"
+                    viewEvent2Text="Ops 2"
+                    viewEvent2Click={this.ops2}
+                    updateEventStart={this.updateEventStart}
+                    updateEventEnd={this.updateEventEnd}
+                    moveEvent={this.moveEvent}
+                    newEvent={this.newEvent}/>
+            </div>
         )
     }
 
-    prevClick = (schedulerData)=> {
+    prevClick = (schedulerData) => {
         schedulerData.prev();
         schedulerData.setEvents(DemoData.events);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
-    nextClick = (schedulerData)=> {
+    nextClick = (schedulerData) => {
         schedulerData.next();
         schedulerData.setEvents(DemoData.events);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
     onViewChange = (schedulerData, view) => {
         schedulerData.setViewType(view.viewType, view.showAgenda, view.isEventPerspective);
         schedulerData.setEvents(DemoData.events);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
     onSelectDate = (schedulerData, date) => {
         schedulerData.setDate(date);
         schedulerData.setEvents(DemoData.events);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
     eventClicked = (schedulerData, event) => {
@@ -88,10 +83,13 @@ class SchedulerComponent extends Component{
 
     newEvent = (schedulerData, slotId, slotName, start, end, type, item) => {
         let newFreshId = 0;
-        schedulerData.events.forEach((item) => {
-            if(item.id >= newFreshId)
-                newFreshId = item.id + 1;
-        });
+        schedulerData
+            .events
+            .forEach((item) => {
+                if (item.id >= newFreshId) 
+                    newFreshId = item.id + 1;
+                }
+            );
 
         let newEvent = {
             id: newFreshId,
@@ -102,30 +100,22 @@ class SchedulerComponent extends Component{
             bgColor: 'purple'
         }
         schedulerData.addEvent(newEvent);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
     updateEventStart = (schedulerData, event, newStart) => {
         schedulerData.updateEventStart(event, newStart);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
     updateEventEnd = (schedulerData, event, newEnd) => {
         schedulerData.updateEventEnd(event, newEnd);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 
     moveEvent = (schedulerData, event, slotId, slotName, start, end) => {
         schedulerData.moveEvent(event, slotId, slotName, start, end);
-        this.setState({
-            viewModel: schedulerData
-        })
+        this.setState({viewModel: schedulerData})
     }
 }
 

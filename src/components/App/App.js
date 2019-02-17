@@ -19,7 +19,7 @@ export default class App extends React.Component {
                 <div className="app__main">
                     <Router>
                         <SchedulerComponent path="/"/>
-                        <Meeting path="/meeting"/>
+                        <Meeting path="meeting"/>
                         <NotFound default />
                     </Router>
                 </div>
