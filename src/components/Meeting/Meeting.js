@@ -7,6 +7,7 @@ import SubjectLabel from '../SubjectLabel/SubjectLabel'
 import DateLabel from '../DateLabel/DateLabel'
 import StartLabel from '../StartLabel/StartLabel'
 import EndLabel from '../EndLabel/EndLabel'
+import Select from '../Select/Select'
 
 export default class Meeting extends React.Component{
 
@@ -29,6 +30,7 @@ export default class Meeting extends React.Component{
 							<StartLabel className="start-label" title="Начало" placeholder="Начало" />						
 							<EndLabel className="end-label" title="Конец" placeholder="Конец" />
 						</div>
+						<Select />
 					</div>
 				</div>
 			</div>
