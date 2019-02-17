@@ -6,7 +6,7 @@ const options = [
     {
         value: 'Лекс Лютер',
         label: 'Лекс Лютер',
-        img: 'https://cdn.pornpics.com/pics/2015-11-01/200026_02big.jpg' 
+        img: 'http://bootstrap.gallery/everest-v3/img/user1.jpg' 
     },
 ];
 
