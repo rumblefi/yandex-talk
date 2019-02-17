@@ -6,6 +6,7 @@ import './App.scss'
 import {Router} from "@reach/router";
 import SchedulerComponent from '../SchedulerComponent/SchedulerComponent'
 import Meeting from '../Meeting/Meeting'
+import NotFound from '../NotFound/NotFound'
 
 export default class App extends React.Component {
 
@@ -19,6 +20,7 @@ export default class App extends React.Component {
                     <Router>
                         <SchedulerComponent path="/"/>
                         <Meeting path="/meeting"/>
+                        <NotFound default />
                     </Router>
                 </div>
 
