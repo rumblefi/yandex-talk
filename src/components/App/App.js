@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../Header/Header'
+import 'normalize.css/normalize.css'
 import '../../index.scss'
 import './App.scss'
 import {Router} from "@reach/router";

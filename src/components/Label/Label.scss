@@ -1,4 +1,5 @@
 .label{
+	width: 100%;
 
 	&__title{
 		font-size: 13px;
@@ -10,6 +11,40 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+
+		.field{
+
+			&:focus{
+
+				& + .icon{
+
+					path{
+						fill: #000000;
+					}
+
+				}
+
+			}
+
+		}
+
+		.icon{
+			position: absolute;
+			right: 13px;
+
+			path{
+				fill: #AFB4B8;
+				transition: 0.3s fill;
+			}
+
+		}
+
+	}
+
+	&__divider{
+		font-size: 13px;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
 }

@@ -26,8 +26,7 @@ export default class Meeting extends React.Component{
 						<SubjectLabel className="subject-label" title="Тема" placeholder="О чем будем говорить" />
 						<div className="meeting-body__partial">
 							<DateLabel className="date-label" title="Дата" placeholder="Дата" />
-							<StartLabel className="start-label" title="Начало" placeholder="Начало" />
-							<span>—</span>
+							<StartLabel className="start-label" title="Начало" placeholder="Начало" />						
 							<EndLabel className="end-label" title="Конец" placeholder="Конец" />
 						</div>
 					</div>

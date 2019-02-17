@@ -23,7 +23,7 @@
     &-body{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 55px; 
+        grid-gap: 32px;
 
         &__partial{
             display: flex;

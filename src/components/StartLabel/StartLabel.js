@@ -5,7 +5,10 @@ import Field from '../Field/Field'
 
 const StartLabel = ({className,title,placeholder}) => (
 	<Label className={className} title={title} >
-		<Field placeholder={placeholder} />
+		<div className="label__field-wrapper">
+			<Field placeholder={placeholder} />
+			<span className="label__divider" >—</span>
+		</div>
 	</Label>
 )
 
