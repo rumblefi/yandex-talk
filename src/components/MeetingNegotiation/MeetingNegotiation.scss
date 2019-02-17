@@ -1,0 +1,31 @@
+.meeting-negotiation{
+	display: flex;
+	align-items: center;
+	height: 37px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 13px;
+	border-radius: 4px;
+
+	&--recommend{
+		background-color: #E9ECEF;
+	}
+
+	&__time{
+		display: flex;
+		align-items: center;
+		font-family: "HelveticaNeueCyr-Bold";
+		margin-right: 16px;
+	}
+
+	&__content{
+		display: flex;
+		align-items: center;
+	}
+
+	&__divider{
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+}
