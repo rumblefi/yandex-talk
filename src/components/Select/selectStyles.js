@@ -2,6 +2,7 @@ export const selectStyles = {
     control: (base, state) => ({
         ...base,
         height: '38px',
+        fontSize: '13px',
         transitionDuration: '0.3s',
         borderWidth: '2px',
         borderStyle: 'solid',
@@ -22,5 +23,14 @@ export const selectStyles = {
     menuList: (base, state) => ({
         ...base,
         padding: 0
+    }),
+    placeholder: (base, state) => ({
+        ...base,
+        color: state.isFocused ? '#000' : '#858E98'
+    }),
+    valueContainer: (base, state) => ({
+        ...base,
+        paddingLeft: '10px',
+        paddingRight: '10px',
     }),
 }

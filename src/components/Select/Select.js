@@ -26,6 +26,7 @@ export default class Select extends React.Component {
                 IndicatorSeparator: () => null,
                 Option
             }}
+            className="react-select"
             // defaultMenuIsOpen
         />);
     }
