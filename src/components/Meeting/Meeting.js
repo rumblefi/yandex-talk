@@ -10,6 +10,7 @@ import EndLabel from '../EndLabel/EndLabel'
 import RecommendNegotiationsLabel from '../RecommendNegotiationsLabel/RecommendNegotiationsLabel'
 import SelectLabel from '../SelectLabel/SelectLabel';
 import Button from '../Button/Button'
+import Fuck from '../Fuck/Fuck';
 
 export default class Meeting extends React.Component {
 
@@ -39,6 +40,7 @@ export default class Meeting extends React.Component {
                         <RecommendNegotiationsLabel
                             className="recommend-negotiations-label"
                             title="Рекомендованные переговорки"/>
+                        {/* <Fuck />     */}
                     </div>
                 </div>
                 <div className="meeting__bottom meeting__buttons">
