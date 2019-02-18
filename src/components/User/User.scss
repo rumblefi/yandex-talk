@@ -1,0 +1,27 @@
+.user{
+	display: inline-flex;
+	align-items: center;
+	height: 24px;
+	font-size: 13px;
+	background-color:  #E9ECEF;
+	border-radius: 16px;
+	padding-right: 10px;
+
+	&__close{
+		margin-left: 12px;
+
+		&:hover{
+
+			path{
+				fill: #000000;
+			}
+
+		}
+	
+		path{
+			transition: 0.3s fill;	
+		}
+
+	}
+
+}

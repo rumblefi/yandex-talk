@@ -1,0 +1,10 @@
+.users-holder{
+	display: flex;
+	flex-wrap: wrap;
+
+	&__item{
+		margin-right: 8px;
+		margin-bottom: 8px;
+	}
+
+}

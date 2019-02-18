@@ -10,7 +10,8 @@ import EndLabel from '../EndLabel/EndLabel'
 import RecommendNegotiationsLabel from '../RecommendNegotiationsLabel/RecommendNegotiationsLabel'
 import SelectLabel from '../SelectLabel/SelectLabel';
 import Button from '../Button/Button'
-import Fuck from '../Fuck/Fuck';
+import CustomScrollBar from '../CustomScrollBar/CustomScrollBar'
+
 
 export default class Meeting extends React.Component {
 
@@ -39,8 +40,7 @@ export default class Meeting extends React.Component {
                         <SelectLabel className="select-label" title="Участники"/>
                         <RecommendNegotiationsLabel
                             className="recommend-negotiations-label"
-                            title="Рекомендованные переговорки"/>
-                        {/* <Fuck />     */}
+                            title="Рекомендованные переговорки"/>    
                     </div>
                 </div>
                 <div className="meeting__bottom meeting__buttons">

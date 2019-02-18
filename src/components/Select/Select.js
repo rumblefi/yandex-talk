@@ -2,7 +2,7 @@ import React from 'react';
 import SelectComponent from 'react-select';
 import Option from '../Option/Option'
 import {selectStyles} from './selectStyles'
-import {selectOptionsData} from './selectOptionsData'
+import {selectOptions} from './selectOptions'
 
 export default class Select extends React.Component {
     state = {
@@ -18,16 +18,15 @@ export default class Select extends React.Component {
         return (<SelectComponent
             value={selectedOption}
             onChange={this.handleChange}
-            options={selectOptionsData}
+            options={selectOptions}
             styles={selectStyles}
             noOptionsMessage={() => "Не найдено"}
             components={{
                 DropdownIndicator: () => null,
                 IndicatorSeparator: () => null,
-                Option
+                Option,
             }}
-            className="react-select"
-            defaultMenuIsOpen
+            // defaultMenuIsOpen
         />);
     }
 }

@@ -1,6 +1,7 @@
 export const selectStyles = {
     control: (base, state) => ({
         ...base,
+        marginBottom: 12,
         height: '38px',
         fontSize: '13px',
         transitionDuration: '0.3s',

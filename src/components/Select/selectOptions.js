@@ -1,4 +1,4 @@
-export const selectOptionsData = [
+export const selectOptions = [
     {
         value: 'Лекс Лютер',
         label: 'Лекс Лютер',

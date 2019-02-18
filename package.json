@@ -10,6 +10,8 @@
     "normalize.css": "^8.0.1",
     "react": "^16.8.2",
     "react-big-scheduler": "^0.2.5",
+    "react-custom-scroll": "^4.0.1",
+    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.8.2",
     "react-inlinesvg": "^0.8.4",
     "react-scripts": "2.1.5",
