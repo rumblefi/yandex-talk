@@ -1,0 +1,41 @@
+.label {
+  width: 100%;
+}
+
+.label__title {
+  font-size: 13px;
+  font-family: "HelveticaNeueCyr-Bold";
+  margin-bottom: 4px;
+}
+
+.label__field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.label__field-wrapper .field:focus + .icon path {
+  fill: #000000;
+}
+
+.label__field-wrapper .icon {
+  position: absolute;
+  right: 13px;
+}
+
+.label__field-wrapper .icon path {
+  fill: #AFB4B8;
+  -webkit-transition: 0.3s fill;
+  transition: 0.3s fill;
+}
+
+.label__divider {
+  font-size: 13px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=Label.css.map */

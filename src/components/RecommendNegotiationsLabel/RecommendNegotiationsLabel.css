@@ -1,0 +1,8 @@
+.recommend-negotiations-label__item {
+  margin-bottom: 8px;
+}
+
+.recommend-negotiations-label__item:last-child {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=RecommendNegotiationsLabel.css.map */

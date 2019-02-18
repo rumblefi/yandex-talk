@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAA;EACT,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,CAAC;CACd",
+    "sources": [
+        "EndLabel.scss"
+    ],
+    "names": [],
+    "file": "EndLabel.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEE,AAAD,mCAAO,CAAA;EACN,aAAa,EAAE,GAAG;CAMlB;;AAPA,AAGA,mCAHM,AAGL,WAAW,CAAA;EACX,aAAa,EAAE,CAAC;CAChB",
+    "sources": [
+        "RecommendNegotiationsLabel.scss"
+    ],
+    "names": [],
+    "file": "RecommendNegotiationsLabel.css"
+}

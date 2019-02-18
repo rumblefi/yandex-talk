@@ -1,0 +1,89 @@
+.meeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.meeting__content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.meeting__container {
+  width: 100%;
+  max-width: 875px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meeting__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.meeting__title {
+  font-size: 20px;
+  font-family: "HelveticaNeueCyr-Bold";
+}
+
+.meeting-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 32px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.meeting-body__partial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meeting__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-top: 2px solid #E9ECEF;
+}
+
+.meeting__button {
+  margin-right: 16px;
+}
+
+.meeting__button:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=Meeting.css.map */

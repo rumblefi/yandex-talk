@@ -1,0 +1,13 @@
+.option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  height: 36px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/*# sourceMappingURL=Option.css.map */

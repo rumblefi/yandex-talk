@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAA;EACZ,WAAW,EAAE,GAAG;EAChB,YAAY,EAAE,GAAG;CACjB",
+    "sources": [
+        "UserDivider.scss"
+    ],
+    "names": [],
+    "file": "UserDivider.css"
+}

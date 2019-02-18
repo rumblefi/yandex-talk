@@ -1,0 +1,9 @@
+.userpic {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 8px;
+}
+/*# sourceMappingURL=UserPic.css.map */

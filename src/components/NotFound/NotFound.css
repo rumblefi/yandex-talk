@@ -1,0 +1,21 @@
+.not-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: "HelveticaNeueCyr-Medium";
+  padding-top: 60px;
+}
+
+.not-found__title {
+  margin-bottom: 20px;
+}
+/*# sourceMappingURL=NotFound.css.map */

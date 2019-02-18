@@ -1,0 +1,10 @@
+.start-label {
+  width: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.start-label .field {
+  width: 72px;
+}
+/*# sourceMappingURL=StartLabel.css.map */

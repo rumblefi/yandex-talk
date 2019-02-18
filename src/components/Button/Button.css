@@ -1,0 +1,59 @@
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-family: "HelveticaNeueCyr-Medium";
+  height: 36px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s background-color;
+  transition: 0.3s background-color;
+  text-decoration: none;
+}
+
+.button[disabled] {
+  cursor: not-allowed;
+}
+
+.button--1 {
+  color: #fff;
+  background-color: #007DFF;
+}
+
+.button--1:hover:enabled {
+  background-color: #0059FF;
+}
+
+.button--1:focus {
+  background-color: #0059FF;
+}
+
+.button--1:disabled {
+  color: rgba(0, 0, 0, 0.2);
+  background-color: #E9ECEF;
+}
+
+.button--2 {
+  color: #000000;
+  background-color: #E9ECEF;
+}
+
+.button--2:hover:enabled {
+  background-color: #DDE0E3;
+}
+
+.button--2:focus {
+  background-color: #C8CDD3;
+}
+
+.button--2:disabled {
+  color: rgba(0, 0, 0, 0.2);
+  background-color: #E2E5E8;
+}
+/*# sourceMappingURL=Button.css.map */

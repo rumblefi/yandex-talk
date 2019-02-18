@@ -1,0 +1,62 @@
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 38px;
+  background-color: #ffffff;
+  border: 2px solid #E9ECEF;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+  letter-spacing: 0.47px;
+  color: #000;
+  -webkit-transition: 0.3s border-color;
+  transition: 0.3s border-color;
+}
+
+.field::-webkit-input-placeholder {
+  color: #858E98;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.field:-ms-input-placeholder {
+  color: #858E98;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.field::-ms-input-placeholder {
+  color: #858E98;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.field::placeholder {
+  color: #858E98;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.field:focus {
+  border-color: #007DFF;
+}
+
+.field:focus::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.field:focus:-ms-input-placeholder {
+  color: #000000;
+}
+
+.field:focus::-ms-input-placeholder {
+  color: #000000;
+}
+
+.field:focus::placeholder {
+  color: #000000;
+}
+/*# sourceMappingURL=Field.css.map */

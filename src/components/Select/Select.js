@@ -27,7 +27,7 @@ export default class Select extends React.Component {
                 Option
             }}
             className="react-select"
-            // defaultMenuIsOpen
+            defaultMenuIsOpen
         />);
     }
 }

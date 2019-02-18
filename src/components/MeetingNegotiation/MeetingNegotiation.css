@@ -1,0 +1,70 @@
+.meeting-negotiation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 37px;
+  padding-left: 10px;
+  padding-right: 16px;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.meeting-negotiation--recommend {
+  background-color: #E9ECEF;
+}
+
+.meeting-negotiation--recommend .meeting-negotiation__close {
+  display: none;
+}
+
+.meeting-negotiation--success {
+  background-color: #007DFF;
+  color: #fff;
+}
+
+.meeting-negotiation__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "HelveticaNeueCyr-Bold";
+  margin-right: 16px;
+}
+
+.meeting-negotiation__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.meeting-negotiation__divider {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.meeting-negotiation__close {
+  margin-left: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+
+.meeting-negotiation__close svg {
+  width: 12px;
+  height: 12px;
+}
+
+.meeting-negotiation__close svg path {
+  fill: #fff;
+}
+/*# sourceMappingURL=MeetingNegotiation.css.map */

@@ -18,11 +18,11 @@ export const selectStyles = {
     menu: (base, state) => ({
         ...base,
         margin: '0',
-        boxShadow: '0 1px 10px 0 rgba(0,44,92,0.28)',
+        boxShadow: '0 1px 10px 0 rgba(0,44,92,0.28)'
     }),
     menuList: (base, state) => ({
         ...base,
-        padding: 0
+        maxHeight: '145px'
     }),
     placeholder: (base, state) => ({
         ...base,

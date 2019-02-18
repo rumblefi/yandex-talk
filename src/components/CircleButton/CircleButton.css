@@ -1,0 +1,28 @@
+.circle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #E9ECEF;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.circle-button:hover svg path, .circle-button:focus svg path {
+  fill: #000000;
+}
+
+.circle-button svg path {
+  -webkit-transition: 0.5s fill;
+  transition: 0.5s fill;
+}
+/*# sourceMappingURL=CircleButton.css.map */

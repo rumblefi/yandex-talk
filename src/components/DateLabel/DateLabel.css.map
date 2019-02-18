@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACV,YAAY,EAAE,IAAI;CAClB",
+    "sources": [
+        "DateLabel.scss"
+    ],
+    "names": [],
+    "file": "DateLabel.css"
+}
