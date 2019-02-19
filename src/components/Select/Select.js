@@ -2,7 +2,6 @@ import React from 'react';
 import SelectComponent from 'react-select';
 import Option from '../Option/Option'
 import {selectStyles} from './selectStyles'
-import './Select.scss'
 
 export default class Select extends React.Component {
     
@@ -27,8 +26,6 @@ export default class Select extends React.Component {
                 Option
             }}
             isMulti
-            autosize={false}
-
             // defaultMenuIsOpen
         />);
     }

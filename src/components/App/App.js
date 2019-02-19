@@ -3,10 +3,35 @@ import Header from '../Header/Header'
 import 'normalize.css/normalize.css'
 import '../../index.scss'
 import './App.scss'
-import {Router} from "@reach/router";
+import {Router,Location} from "@reach/router";
 import SchedulerComponent from '../SchedulerComponent/SchedulerComponent'
 import Meeting from '../Meeting/Meeting'
 import NotFound from '../NotFound/NotFound'
+import posed, {PoseGroup} from 'react-pose'
+
+const RouteContainer = posed.div({
+    enter: {
+        opacity: 1,
+        delay: 50
+    },
+    exit: {
+        opacity: 0
+    }
+});
+
+
+const PosedRouter = ({ children }) => (
+    <Location>
+      {({ location }) => (
+        <PoseGroup>
+          <RouteContainer key={location.key}>
+            <Router location={location}>{children}</Router>
+          </RouteContainer>
+        </PoseGroup>
+      )}
+    </Location>
+);
+
 
 export default class App extends React.Component {
 
@@ -17,11 +42,11 @@ export default class App extends React.Component {
                     <Header/>
                 </div>
                 <div className="app__main">
-                    <Router>
+                    <PosedRouter>
                         <SchedulerComponent path="/"/>
                         <Meeting path="meeting"/>
                         <NotFound default/>
-                    </Router>
+                    </PosedRouter>
                 </div>
 
             </div>
