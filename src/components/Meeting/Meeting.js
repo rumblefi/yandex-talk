@@ -37,7 +37,7 @@ export default class Meeting extends React.Component {
                             <StartLabel className="start-label" title="Начало" placeholder="Начало"/>
                             <EndLabel className="end-label" title="Конец" placeholder="Конец"/>
                         </div>
-                        <SelectLabel className="select-label" title="Участники"/>
+                        <SelectLabel className="select-label" title="Участники" selectPlaceholder="Например, Тор Одинович" />
                         <RecommendNegotiationsLabel
                             className="recommend-negotiations-label"
                             title="Рекомендованные переговорки"/>    

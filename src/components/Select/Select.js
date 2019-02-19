@@ -2,30 +2,33 @@ import React from 'react';
 import SelectComponent from 'react-select';
 import Option from '../Option/Option'
 import {selectStyles} from './selectStyles'
-import {selectOptions} from './selectOptions'
+import './Select.scss'
 
 export default class Select extends React.Component {
-    state = {
-        selectedOption: null
+    
+    handleChange = (selectedOptions) => {
+        this.props.onSelectChange(selectedOptions)
     }
-    handleChange = (selectedOption) => {
-        this.setState({selectedOption});
-        console.log(`Option selected:`, selectedOption);
-    }
+
     render() {
-        const {selectedOption} = this.state;
+
+        const {value,selectPlaceholder,optionsData} = this.props
 
         return (<SelectComponent
-            value={selectedOption}
+            value={value}
             onChange={this.handleChange}
-            options={selectOptions}
+            placeholder={selectPlaceholder}
+            options={optionsData}
             styles={selectStyles}
             noOptionsMessage={() => "Не найдено"}
             components={{
                 DropdownIndicator: () => null,
                 IndicatorSeparator: () => null,
-                Option,
+                Option
             }}
+            isMulti
+            autosize={false}
+
             // defaultMenuIsOpen
         />);
     }

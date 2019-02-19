@@ -8,7 +8,12 @@
 	padding-right: 10px;
 
 	&__close{
+		width: 10px;
+		height: 10px;
 		margin-left: 12px;
+		background-color: transparent;
+		border: none;
+		padding: 0;
 
 		&:hover{
 

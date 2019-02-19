@@ -3,18 +3,50 @@ import './SelectLabel.scss'
 import Label from '../Label/Label'
 import Select from '../Select/Select'
 import User from '../User/User'
-import {selectOptions} from '../Select/selectOptions'
 import UsersHolder from '../UsersHolder/UsersHolder'
+import {selectOptions} from '../../fixtures/selectOptions'
 
-const SelectLabel = ({className, title, placeholder}) => (
-    <Label className={className} title={title}>
-		  <Select />
-      <UsersHolder>
-        <User className="users-holder__item" imgSrc={selectOptions[0].img} username={selectOptions[0].label} />
-        <User className="users-holder__item" imgSrc={selectOptions[1].img} username={selectOptions[1].label} />
-        <User className="users-holder__item" imgSrc={selectOptions[2].img} username={selectOptions[2].label} />
-      </UsersHolder>
-    </Label>
-)
+export default class SelectLabel extends React.Component {
 
-export default SelectLabel
+    state = {
+        selectedOptions: []
+    }
+
+    handleSelectChange = (selectedOptions) => {
+        this.setState({selectedOptions})
+    }
+
+    handleUserClose = (userId) => {
+        this.setState( ({selectedOptions}) => ({
+            selectedOptions: selectedOptions.filter( (user) => user.id !== userId )
+        }))
+    }
+
+    render() {
+        const {className, title, selectPlaceholder} = this.props
+        const {selectedOptions} = this.state
+
+        const users = selectedOptions.map(user => (<User
+            key={user.id}
+            userId={user.id}
+            className="users-holder__item"
+            imgSrc={user.img}
+            username={user.label}
+            onUserClose={this.handleUserClose}
+        />))
+
+        return (
+            <Label className={className} title={title}>
+                <Select
+                    value={selectedOptions}
+                    onSelectChange={this.handleSelectChange}
+                    selectPlaceholder={selectPlaceholder}
+                    optionsData={selectOptions}/>
+                <UsersHolder>
+                    {users}
+                </UsersHolder>
+            </Label>
+        )
+
+    }
+}
